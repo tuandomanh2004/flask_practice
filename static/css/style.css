@@ -1,0 +1,249 @@
+.header {
+    position: relative;
+    display: flex;
+    background-color: var(--color-1);
+    border: 1px solid;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 999;
+}
+
+.header .header-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+.header .header-logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.header .header-logo span {
+    font-size: 30px;
+    font-weight: 800;
+    color: #E4002B;
+}
+
+.header .header-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: #E4002B;
+    font-weight: 400;
+}
+
+.header-list li {
+    margin-right: 30px;
+}
+
+.header .header-icons {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.header .header-icons li i {
+    margin-right: 30px;
+    font-size: 30px;
+    color: #E4002B;
+}
+
+/* Start Section-1 */
+.section-1 {
+    position: relative;
+    display: flex;
+    height: 450px;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.section-1 .button {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    background-color: #ff5252;
+    z-index: 1;
+}
+
+.section-1 .button:hover {
+    background-color: #E4002B;
+}
+
+.section-1 h2 {
+    position: absolute;
+    top: 0px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.section-1 span {
+    font-size: 30px;
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8),
+        0 0 20px rgba(250, 0, 0, 0.8),
+        0 0 30px rgb(240, 8, 8);
+}
+
+/* End-Section 1 */
+
+/* Start-Section 2 */
+.section-2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+}
+
+.section-2 .big-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2 .inner-img {
+    width: 50%;
+    height: 100%;
+}
+
+.section-2 .inner-vid iframe {  
+    width : 200% ; 
+    height : 100%  ;
+}
+
+.section-2 .inner-content {
+    background-color: #ffffff;
+    width: 49%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-2 .inner-content h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.section-2 .inner-content .small-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-2 .inner-content .small-container div {
+    position: relative;
+    margin: 30px;
+}
+
+.section-2 .inner-content .small-container .world::before {
+    content: "4";
+    font-size: 50px;
+    color: #E4002B;
+    position: absolute;
+    top: -80px;
+    left: 10px;
+}
+
+.section-2 .inner-content .small-container .msi::before {
+    content: "2";
+    font-size: 50px;
+    color: #E4002B;
+    position: absolute;
+    top: -80px;
+    left: 3px;
+}
+
+.section-2 .inner-content .small-container .nation::before {
+    content: "9";
+    font-size: 50px;
+    color: #E4002B;
+    position: absolute;
+    top: -80px;
+    left: 12px;
+}
+
+.section-2 .inner-content p {
+    color: #777777;
+    font-size: 24px;
+}
+
+/* End-Section 2 */
+
+/* Start-Section 3 */
+.section-3 {
+    padding: 25px 40px;
+    background-color: #000;
+    text-align: center;
+    height: auto;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230524/pngtree-league-of-legends-trophies-and-banner-image_2615923.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin-left: 40px;
+}
+
+.section-3 .small-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-3 .small-container .member {
+    text-decoration: none;
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+    height: auto;
+    border-radius: 10px ; 
+    background-blend-mode: lighten;
+    margin-right: 0px;
+    z-index: 999;
+}
+
+.section-3 .big-container h1 {
+    color: #EFEFEF;
+}
+
+.member .img-box {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.member .img-box .face {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+.small-container h2 {
+    font-size: 25px;
+    font-weight: 700px;
+    color : #EFEFEF ; 
+    filter: brightness(200%);
+    background-color: rgba(255, 255, 255, 0.1); 
+
+}
+
+.small-container span {
+    color: red;
+    font-size: 15px;
+}
